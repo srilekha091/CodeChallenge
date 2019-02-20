@@ -23,10 +23,3 @@ MicroSense is a (super) micro implementation of ItemSense that:
 
 ## Challenge
 For instructions on the code challenge that consumes Microsense, see [challenge.md](challenge.md)
-
-
-
-## Steps to run
-  npm install 
-  node index.js
-  to run specs karma start
