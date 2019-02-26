@@ -1,0 +1,31 @@
+
+table.customTable {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #00a19b;
+  border-style: solid;
+  color: #000000;
+  
+}
+
+table.customTable td, table.customTable th {
+  border-width: 2px;
+  border-color: #00a19b;
+  border-style: solid;
+  padding: 5px;
+  text-align: center;
+}
+
+table.customTable thead {
+  background-color: #00A19B;
+}
+
+table.customTable .checkStyle{
+	
+}
+
+button#startJob {
+	background-color : #000000;
+}

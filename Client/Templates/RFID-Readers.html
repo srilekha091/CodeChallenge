@@ -1,0 +1,42 @@
+﻿<h1><center>{{message}}</center></h1>
+
+<h3>Please select the readers. </h3> 
+<div>
+    <table class="customTable">
+        <thead>
+            <tr>
+				<th>Select</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Address</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="reader in readers">	
+                <td class="checkStyle"><input type="checkbox" ng-model="reader.checked" /></td>
+                <td>{{reader.name}}</td>
+                <td>{{reader.type}}</td>
+                <td>{{reader.address}}</td>
+                <td>{{reader.health}}</td>
+            </tr>
+        </tbody>
+    </table>
+	
+</div>
+
+<br/>
+<h3>Please select the operation.</h3>
+<ul style = "list-style-type: none;">
+    <li ng-repeat="operation in operations">
+      <input type="radio" ng-model="model.operation" name="occurances" ng-value="operation" /> {{operation.name}}
+    </li>
+</ul>
+
+<br>Please click the start button to start the job. &nbsp;<button type='button' ng-click="StartJob()" id="startJob">Start Job</button><br>
+
+<br/>
+
+<p style="font-size: 16px;">Job Result: &nbsp;<textarea style="width:30%; " rows="4" cols="50" ng-model="JobOutput" /> </p>
+
+  
