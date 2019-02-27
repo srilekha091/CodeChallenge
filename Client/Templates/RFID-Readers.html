@@ -1,6 +1,8 @@
-﻿<h1><center>{{message}}</center></h1>
+﻿<link rel="stylesheet" type="text/css" href="/Style.css">
 
-<h3>Please select the readers. </h3> 
+<h1 id="mainHeader"><center>{{message}}</center></h1>
+
+<h4>Please select the readers. </h4> 
 <div>
     <table class="customTable">
         <thead>
@@ -13,7 +15,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="reader in readers">	
+            <tr ng-repeat="reader in readers">
                 <td class="checkStyle"><input type="checkbox" ng-model="reader.checked" /></td>
                 <td>{{reader.name}}</td>
                 <td>{{reader.type}}</td>
@@ -26,17 +28,27 @@
 </div>
 
 <br/>
-<h3>Please select the operation.</h3>
-<ul style = "list-style-type: none;">
-    <li ng-repeat="operation in operations">
-      <input type="radio" ng-model="model.operation" name="occurances" ng-value="operation" /> {{operation.name}}
-    </li>
-</ul>
+<h4>Please select the operation.</h4>
 
-<br>Please click the start button to start the job. &nbsp;<button type='button' ng-click="StartJob()" id="startJob">Start Job</button><br>
+<table class="customTableOperations">
+        <thead>
+            <tr>
+				<th>Select</th>
+				<th>List of Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="operation in operations">
+                <td class="checkStyle"><input type="radio" ng-model="model.operation" name="occurances" ng-value="operation" /></td>
+                <td>{{operation.name}}</td>
+            </tr>
+        </tbody>
+    </table>
 
-<br/>
+<br/><br/>Please click the start button to start the job. &nbsp;<button type='button' ng-click="StartJob()" class="startJob">Start Job</button>
 
-<p style="font-size: 16px;">Job Result: &nbsp;<textarea style="width:30%; " rows="4" cols="50" ng-model="JobOutput" /> </p>
+<br/><br/>
+
+<p class="jobOutput">Job Result: &nbsp;<textarea style="width:30%; " rows="4" cols="50" ng-model="JobOutput" /> </p>
 
   

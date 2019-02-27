@@ -1,20 +1,87 @@
+*{}
+
+#mainHeader{
+	color: #f7323f;
+}
+
 table.customTable {
   width: 100%;
   background-color: #FFFFFF;
   border-collapse: collapse;
   border-width: 2px;
-  border-color: #7EA8F8;
+  border-color: #00a19b;
   border-style: solid;
   color: #000000;
+  
 }
 
 table.customTable td, table.customTable th {
   border-width: 2px;
-  border-color: #7EA8F8;
+  border-color: #00a19b;
   border-style: solid;
   padding: 5px;
+  position: center;
+  text-align: center;
 }
 
 table.customTable thead {
-  background-color: #7EA8F8;
+  background-color: #00A19B;
+}
+
+table.customTable .checkStyle{
+	width: 10%;
+}
+
+table.customTableOperations{
+  width: 43%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #00a19b;
+  border-style: solid;
+  color: #000000;
+  
+}
+
+table.customTableOperations td, table.customTableOperations th {
+  border-width: 2px;
+  border-color: #00a19b;
+  border-style: solid;
+  padding: 5px;
+  position: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+table.customTableOperations thead {
+  background-color: #00A19B;
+}
+
+table.customTableOperations .checkStyle{
+	width: 25%;
+}
+
+.startJob {
+  background-color: #00a19b;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.startJob:hover {
+  background-color: #bababa;
+  color: #f7323f;
+}
+
+.jobOutput{
+	font-size: 16px;
 }
